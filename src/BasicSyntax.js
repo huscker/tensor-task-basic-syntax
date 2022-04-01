@@ -15,7 +15,7 @@ export function romanToInteger(str) {
     }
     let prev = 0;
     for(let i = 0;i<str.length;i++){
-    	val = alphabet[str[i]];
+    	let val = alphabet[str[i]];
     	result += prev < val ? val - 2*prev : val;
     	prev = val;
     }
